@@ -496,7 +496,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 getHintBtn.disabled = true;
                 const systemPrompt = "Eres un experto en el juego de Solitario Klondike. Tu única función es analizar el estado actual del juego que se te proporciona y sugerir el mejor movimiento posible en una frase corta y directa. No saludes, no expliques las reglas, solo da la sugerencia. Si no hay movimientos posibles, dilo. Por ejemplo: 'Mueve el 5 de corazones sobre el 6 de picas.' o 'Voltea una carta del mazo.'";
                 const userQuery = formatGameStateForLLM();
-                const apiKey = ""; // API key is handled by the environment
+                const apiKey = "AIzaSyBiu9Hinri1i7fdH-ai7hE0EjYwLy0l2jM"; // API key is handled by the environment
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
                 try {
@@ -537,4 +537,5 @@ document.addEventListener('DOMContentLoaded', () => {
             
             initGame();
             updateLayoutValues();
+
         });
