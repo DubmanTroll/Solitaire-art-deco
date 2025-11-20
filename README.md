@@ -5,7 +5,7 @@ Un juego de Solitario Klondike clásico reimaginado con una estética elegante A
 
 
 ## 🔗 Jugar Ahora
-[Haz clic aquí para ver el juego en vivo](LINK_DE_GITHUB_PAGES_AQUI)
+[Haz clic aquí para ver el juego en vivo](https://dubmantroll.github.io/Solitaire-art-deco/)
 
 ## ✨ Características Principales
 * **Estética 100% Art Deco:** Diseño visual personalizado con paleta de colores dorados, negros y crema.
