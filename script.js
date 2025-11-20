@@ -464,6 +464,11 @@ document.addEventListener('DOMContentLoaded', () => {
             function showHint(text) { hintText.textContent = text; hintModal.classList.add('show'); }
             function hideHint() { hintModal.classList.remove('show'); }
 
+           /* The above code is a JavaScript function that formats the current state of a Solitaire
+           game for display in a specific format. It includes information such as the score, timer,
+           top card in the waste pile, cards in the foundations, and cards in the tableau columns.
+           The function constructs a string representation of the game state with all this
+           information and returns it. */
             function formatGameStateForLLM() {
                 let state = "Estado actual del juego de Solitario:\n";
                 state += `Puntuación: ${score}\n`;
@@ -491,6 +496,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 return state;
             }
 
+            /* The above code is an asynchronous function `getHintFromLLM` that performs the following
+            tasks:
+            1. Shows a loader while processing.
+            2. Disables the `getHintBtn` button.
+            3. Defines a `systemPrompt` message for the expert in the Solitaire Klondike game.
+            4. Formats the game state for input to the Language Model (LLM).
+            5. Uses an API key to make a request to a Google Cloud API endpoint for generating
+            content based on the game state. */
             async function getHintFromLLM() {
                 showLoader();
                 getHintBtn.disabled = true;
@@ -537,5 +550,4 @@ document.addEventListener('DOMContentLoaded', () => {
             
             initGame();
             updateLayoutValues();
-
         });
